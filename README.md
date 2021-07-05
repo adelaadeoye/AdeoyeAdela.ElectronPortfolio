@@ -23,7 +23,7 @@ The project is an answer to Greenfire.io full-stack developer role I am interest
 
 ## Installation
 
-Use the Yarn
+Use Yarn
 
 ```bash
 1. git clone the repo
