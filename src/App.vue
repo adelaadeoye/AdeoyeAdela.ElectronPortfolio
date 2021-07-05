@@ -1,5 +1,4 @@
 <template>
-
     <div ref="imageDom">
       <img id="profilePic" alt="Vue logo" src="./assets/profilePic.jpeg" />
       <HelloWorld msg="Hi dear" />
@@ -7,7 +6,8 @@
       <div id="crypto">
         <cryptoPrice v-bind:XTZ="XTZ" v-bind:ADA="ADA" />
       </div>
-    <button @click="toImage">Download PDF</button>
+   
+    <button id="button" @click="toImage">Download PDF</button>
 
       <div id="tweet">
         <TwitterFeed
@@ -17,6 +17,10 @@
           src="https://twitter.com/ethereum?ref_src=twsrc%5Etfw"
         ></TwitterFeed>
       </div>
+      <a href="https://github.com/adelaadeoye" target="blank">Github</a>
+      <a href="https://www.linkedin.com/in/adeoyeadela/" target="blank">linkedin</a>
+      <a href="mailto:adeoye.adela@gmail.com">email</a>
+      <a href="https://drive.google.com/file/d/1AVRk37NOH5KCTfqbgi0QIZFPRiNykNBS/view?usp=sharing" target="blank">Resume</a>
     </div>
 </template>
 <script>
@@ -66,7 +70,6 @@ export default {
       aLink.style.display = "none";
       aLink.href = downloadUrl;
       aLink.download = "File.png";
-      // Trigger click-then remove
       document.body.appendChild(aLink);
       aLink.click();
       document.body.removeChild(aLink);
@@ -103,6 +106,8 @@ export default {
   justify-content: space-between;
   margin: auto;
   width: 500px;
-  height: 300px;
+  /* height: 300px; */
 }
+button{margin-top: 20px;}
+a{margin:5px}
 </style>
