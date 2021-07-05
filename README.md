@@ -2,7 +2,7 @@
 
 # The Greenfire Developer Test
 
-                                                                      Hi there! 
+Hi there! 
 
 My name is  
 ### Adela Adeoye
@@ -23,10 +23,13 @@ The project is an answer to Greenfire.io full-stack developer role I am interest
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use Yarn
 
 ```bash
-pip install foobar
+1. git clone the repo
+2. cd into the repo
+3. on the terminal do yarn
+4. yarn electron
 ```
 
 ## Contributing
