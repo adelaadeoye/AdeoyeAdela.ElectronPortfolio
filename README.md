@@ -18,8 +18,8 @@ The project is an answer to Greenfire.io full-stack developer role I am interest
 
 1. Develop on MacProbook 2017 macOS Catalina version 10.15.7
 2. Node v14.15.1
-3. Vue3
-4. Electron 13x
+3. Vue2x
+4. Electron 6.0.1
 
 ## Installation
 

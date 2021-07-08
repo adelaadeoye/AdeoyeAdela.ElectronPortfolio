@@ -6,25 +6,26 @@
       <div>
         <h4>TEZOS</h4>
         <p>${{ XTZ }}</p>
-        <qr :value="'The price of TEZOS is $'+XTZ" />
+        <vue-qrcode :value="'The price of TEZOS is $'+XTZ" scale="2" />
       </div>
       <div>
         <h4>BURST</h4>
         <p>${{ BURST }}</p>
-        <qr :value="'The price of BURST is $'+BURST" />
+        <vue-qrcode :value="'The price of BURST is $' + BURST" scale="2" />
       </div>
       <div>
         <h4>CARDANO</h4>
-       <p>${{ ADA }}</p>
-        <qr :value="'The price of ADA is $'+ADA" />
+        <p>${{ ADA }}</p>
+        <vue-qrcode :value="'The price of ADA is $' + ADA" scale="2"/>
+
       </div>
     </div>
   </div>
 </template>
-<script setup>
-import qr from "./qr.vue";
-</script>
+
 <script>
+import VueQrcode from "vue-qrcode";
+
 export default {
   name: "app",
   props: {
@@ -34,6 +35,9 @@ export default {
   },
   data() {
     return {};
+  },
+  components: {
+    VueQrcode,
   },
 };
 </script>

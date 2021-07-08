@@ -1,24 +1,56 @@
 {
-  "version": "0.0.0",
-  "main":"main.js",
+  "name": "adela-electron-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview",
-    "electron":"vite build && electron ."
+    "electron": "vue-cli-service build && electron .",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "electron": "^13.1.5",
+    "core-js": "^2.6.5",
     "html2canvas": "^1.0.0",
     "jspdf": "^2.3.1",
+    "qrcode": "^1.4.4",
     "qrcode.vue": "^3.2.2",
-    "vue": "^3.0.5",
-    "vue-typer": "^1.2.0"
+    "vue": "^2.6.10",
+    "vue-qrcode": "^0.4.0",
+    "vue-router": "^3.0.3"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^1.2.3",
-    "@vue/compiler-sfc": "^3.0.5",
-    "vite": "^2.3.8"
-  }
+    "@vue/cli-plugin-babel": "^3.10.0",
+    "@vue/cli-plugin-eslint": "^3.10.0",
+    "@vue/cli-service": "^3.10.0",
+    "babel-eslint": "^10.0.1",
+    "electron": "^6.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }
